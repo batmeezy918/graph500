@@ -1,0 +1,21 @@
+# STAGE 0 - INTERACTIVE ENVIRONMENT RECORD
+date_utc:       2026-09-24
+device:         TMRV08P5G (Android 16 / SDK 36, proot)
+uname:          Linux localhost 6.17.0-PRoot-Distro aarch64
+cpu_soc:        ARM Cortex-A55 (0xd05) + big-core (0xd41), 8 hw cores
+cpu_effective_cpuset: 1 CPU quota (nproc=1)
+mem_total:      7.2 GiB (MemAvailable ~2.5 GiB), swap 4 GiB
+thermal_zone:   41-47 C observed
+repo:           fork of graph500/graph500 -> batmeezy918/graph500
+branch:         newreference
+commit:         f89d643ce4aaae9a823d310c6ab2dd10e3d2982c (tag 3.0.1)
+generator:      Kronecker R-MAT initiator A(0.57), B(0.19), C(0.19), D(0.05)
+                seeds 2,3; edgefactor 16; GENERATOR_USE_PACKED_EDGE_TYPE (48-bit, 12 B/edge)
+mpi:            Open MPI 5.0.7 (forwarded via mpicc); run as direct singleton
+                (pmix listener unavailable in proot -> MPI_COMM_WORLD size=1)
+compiler:       gcc/g++ 14.2.0 (mpicc wrapper -> GNU)
+cflags:         -Drestrict=__restrict__ -O3 -DGRAPH_GENERATOR_MPI -DREUSE_CSR_FOR_VALIDATION -I../aml -fcommon
+ldflags:        -lpthread -lm
+calibration_ref: SCALE18 V=262144 VQ=153911  comp=1.70322x largest_class=88023
+                 baseline_BFS=0.997500s  quotient+reconstruction=1.215800s  S_composed=0.820444x
+run_cmd:        ./graph500_reference_bfs 18 16  (TMPFILE + REUSEFILE)
