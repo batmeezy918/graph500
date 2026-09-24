@@ -112,6 +112,11 @@ SCALE 21 FULLY VERIFIED (official validation, 64 searches, exit 0):
   adds structures without an edge-work win. Speeding up at 18/19/20 rests on the
   measured V/Q and edge reductions there; scale-21 is recorded CORRECT-but-slowed,
   ratio flagged YELLOW (not a matched pair).
+SCALE 22: NOT ATTEMPTED — resource boundary documented: frozen graph alone ~770MB
+  (2x s21.bin) but filesystem free is ~295MB (root and tmpfs both 100%) and available
+  RAM ~1.4GiB vs ~2GiB+ working-set requirement. MAX VERIFIED SCALE = 21 remains the
+  frontier this host supports; scale-21 is the last constructible+verifiable size in
+  the current resource envelope.
 Class-size histogram at SCALE 18 (diag variant):
   |C|=1:148685 (96.68% singleton classes)  |C|=2:2390  |C|3-4:1458
   |C|5-256:1262  |C|257-65536:1  |C|>65536:1 (the isolated class 88453)
