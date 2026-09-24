@@ -17,7 +17,7 @@ csr_reference.c) with a Kernel-2 drop-in (src/bfs_quotient_twin.c).
 ## Files
 - system.txt, compiler.txt            environment + toolchain
 - graph500_commit.txt                 upstream checkout (f89d643, tag 3.0.1)
-- algorithm_commit.txt                implementation commit (a07c5f4, +variants)
+- algorithm_commit.txt                implementation commit (a07c5f4, +diag/parallel variants)
 - build_commands.sh / run_commands.sh exact commands used
 - baseline_output.txt                 concatenation of official_baseline/official_bfs_scale{18,19,20}.log
 - quotient_output.txt                 concatenation of quotient logs (official-format fields)
@@ -25,11 +25,24 @@ csr_reference.c) with a Kernel-2 drop-in (src/bfs_quotient_twin.c).
 - timing_model.md                     operation-by-operation accounting (see parent dir)
 - quotient_statistics.csv, performance_comparison.csv
 - checksums.sha256                    all artifacts
+- matched_ref20.log, matched_quot20.log   back-to-back same-graph scale-20 pair (QUOTIENT_DUMP)
+- quotient_bfs_scale16.log, diag_scale18.log, probe_scale21.log
+- verified_scale21.log                 (enabled only if the scale-21 full run completes)
+- reproducibility_rerun_scale18.log, par_serial18.log, par_worker{1,2}_18.log
+- parallel_diagnostic.md               2-worker experiment (RESEARCH, non-official)
+- official_specification.md             spec v2.0 rules + timing/submission state
 
 ## Headline official-format numbers (MEASURED, GREEN)
 SCALE 18: harmonic TEPS 1.58535e+07 (reference 8.16728e+06)  NBFS 64  validation 64/64
 SCALE 19: harmonic TEPS 1.42328e+07 (reference 5.60031e+06)  NBFS 64  validation 64/64
 SCALE 20: harmonic TEPS 1.11964e+07 (reference 6.57104e+06)  NBFS 64  validation 64/64
+MATCHED pair scale 20 (identical frozen graph, contiguous window):
+  ref 9.26255e+06 vs quotient 1.15903e+07 TEPS -> ratio 1.2513x (validated 64/64 both)
+Q B_G == B_Q Q MEASURED at scale 20: 1,048,575/1,048,575 non-root, 0 mismatches
+  (also matched 65536/65536 at scale 16, 4095/4096 at scale 12).
+SCALE 21: quotient VERIFIED 64/64 (harmonic 4.17962e+06, construction 108.3s) but
+  cross-window (non-matched) reference 5.83657e+06 -> ratio 0.716x, quotient SLOWER;
+  edge compression saturates ~1.06x at 21 (isolated class dominates). Flagged YELLOW.
 TEPS ratio == mean-time speedup exactly (identical traversed-edge count m; see
 timing_model.md section E).
 

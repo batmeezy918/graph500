@@ -100,11 +100,18 @@ All results on exclusive CPU, frozen reference graphs, direct-singleton runs.
 SCALE 16 quotient (official binary, QUOTIENT_DUMP): V/Q=42192, comp 1.553304,
   largest class 18722 = isolated; Q B_G matched 65536/65536 non-root, 0 mismatches;
   PASS 64/64 (harmonic TEPS 1.34381e7).
-SCALE 21 probe (SKIP_VALIDATION, bounded): construction succeeded
-  V=2097153, V/Q=1069627, comp 1.960640, largest class 852908 = isolated;
-  >=33 BFS searches completed per-root (qbfs ~3.3s + recon ~1.1s) before bound.
-  => max FULLY VERIFIED scale = 20; scale 21 = construction/BFS-feasible probe
-     (full validation not yet run; boundary recorded, not promoted).
+SCALE 21 FULLY VERIFIED (official validation, 64 searches, exit 0):
+  V=2097153, V/Q=1069627, E/Q=63368144, comp 1.960640, largest class 852908 = isolated;
+  construction_time 108.342 s; harmonic TEPS 4.17962e+06; min_nedge 33552502;
+  validation 64/64 PASS, 0 failures. MAX VERIFIED SCALE now 21.
+  Scale-21 reference measured in a separate window (NOT back-to-back matched):
+  harmonic TEPS 5.83657e+06, mean_time 5.74867; cross-window ratio 0.716x
+  (quotient SLOWER). Structural explanation: at scale 21 the isolated (empty-
+  neighborhood) class is the overwhelming compression driver; vertex float 1.96x
+  does not reduce feasible edge scans (E/Q vs E ratio only ~1.06x), so the quotient
+  adds structures without an edge-work win. Speeding up at 18/19/20 rests on the
+  measured V/Q and edge reductions there; scale-21 is recorded CORRECT-but-slowed,
+  ratio flagged YELLOW (not a matched pair).
 Class-size histogram at SCALE 18 (diag variant):
   |C|=1:148685 (96.68% singleton classes)  |C|=2:2390  |C|3-4:1458
   |C|5-256:1262  |C|257-65536:1  |C|>65536:1 (the isolated class 88453)

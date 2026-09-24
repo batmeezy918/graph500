@@ -1,0 +1,78 @@
+[localhost:08155] opal_ifinit: ioctl(SIOCGIFHWADDR) failed with errno=13
+[localhost:08155] pmix_ifinit: ioctl(SIOCGIFHWADDR) failed with errno=13
+failed to open /dev/dri/renderD128: Permission denied
+failed to open /dev/dri/renderD128: Permission denied
+failed to open /dev/dri/renderD128: Permission denied
+failed to open /dev/dri/renderD128: Permission denied
+failed to open /dev/dri/renderD128: Permission denied
+failed to open /dev/dri/renderD128: Permission denied
+graph_generation:               0.000003 s
+quotient: V=2097153 E=67105872 V/Q=1069627 E/Q=63368144 |V|/|V/Q|=1.960640 largest_class=852908 isolated=852908
+  times: CSR 98.003479 sort 40.755517 fp 8.747746 classify 0.502418 quotientCSR 84.308080 (total 232.317240)
+construction_time:              232.373278 s
+[quotient] root 939160 qbfs=5.982764 recon=2.693905 visited=1243378/2097153 levels=7
+=== QUOTIENT EVIDENCE for root 939160 ===
+   v=0 orig_dist=3 quo_dist=3 class=769203
+   v=1 orig_dist=-1 quo_dist=-1 class=0
+   v=2 orig_dist=3 quo_dist=3 class=507655
+   v=3 orig_dist=-1 quo_dist=-1 class=0
+   v=4 orig_dist=-1 quo_dist=-1 class=0
+   v=5 orig_dist=-1 quo_dist=-1 class=0
+   v=6 orig_dist=3 quo_dist=3 class=858044
+   v=7 orig_dist=3 quo_dist=3 class=670260
+   v=8 orig_dist=4 quo_dist=4 class=370474
+   v=9 orig_dist=3 quo_dist=3 class=263779
+   v=10 orig_dist=-1 quo_dist=-1 class=0
+   v=11 orig_dist=-1 quo_dist=-1 class=0
+   Q B_G == B_Q Q check: matched 2097152/2097152 non-root vertices (root 939160 handled by singleton split), mismatches=0
+   level 1: parent-class map (class -> parent class, rep-vertex):
+     class 1053164 (1 members, rep v=1485221) <- parent 1069627 rep-vertex=939160
+     class 1068506 (1 members, rep v=968053) <- parent 1069627 rep-vertex=939160
+     class 1068808 (1 members, rep v=250085) <- parent 1069627 rep-vertex=939160
+     class 1068913 (1 members, rep v=770662) <- parent 1069627 rep-vertex=939160
+   level 2: parent-class map (class -> parent class, rep-vertex):
+     class 22613 (27 members, rep v=183312) <- parent 1068506 rep-vertex=968053
+     class 94098 (29 members, rep v=54906) <- parent 1068913 rep-vertex=770662
+     class 95073 (26 members, rep v=13061) <- parent 1068808 rep-vertex=250085
+     class 96831 (3 members, rep v=93809) <- parent 1053164 rep-vertex=1485221
+     class 108620 (1 members, rep v=1293323) <- parent 1068913 rep-vertex=770662
+     class 108805 (1 members, rep v=1403888) <- parent 1068506 rep-vertex=968053
+     class 111948 (1 members, rep v=1473371) <- parent 1068506 rep-vertex=968053
+     class 112046 (1 members, rep v=681445) <- parent 1068913 rep-vertex=770662
+     class 113105 (1 members, rep v=1109754) <- parent 1068913 rep-vertex=770662
+     class 113290 (1 members, rep v=1090864) <- parent 1068808 rep-vertex=250085
+   level 3: parent-class map (class -> parent class, rep-vertex):
+     class 8 (5 members, rep v=907610) <- parent 1051018 rep-vertex=1868396
+     class 18 (2 members, rep v=107514) <- parent 1047708 rep-vertex=1585274
+     class 42 (5 members, rep v=596791) <- parent 1065775 rep-vertex=1169484
+     class 46 (1 members, rep v=329437) <- parent 1016535 rep-vertex=542776
+     class 69 (11 members, rep v=136800) <- parent 1065903 rep-vertex=1023485
+     class 78 (10 members, rep v=36775) <- parent 1064303 rep-vertex=1788554
+     class 80 (12 members, rep v=81007) <- parent 1063195 rep-vertex=230545
+     class 116 (24 members, rep v=76160) <- parent 1068326 rep-vertex=644226
+     class 129 (1 members, rep v=1220944) <- parent 883525 rep-vertex=1980158
+     class 138 (1 members, rep v=591574) <- parent 931293 rep-vertex=263204
+   reconstructed pred[] (first 12 vertices):
+     pred[0]=1507240 dist=3
+     pred[1]=-1 dist=-1
+     pred[2]=650694 dist=3
+     pred[3]=-1 dist=-1
+     pred[4]=-1 dist=-1
+     pred[5]=-1 dist=-1
+     pred[6]=1551167 dist=3
+     pred[7]=1765810 dist=3
+     pred[8]=2079482 dist=4
+     pred[9]=1677968 dist=3
+     pred[10]=-1 dist=-1
+     pred[11]=-1 dist=-1
+Running BFS 0
+[quotient] root 939160 qbfs=17.662967 recon=2.800401 visited=1243378/2097153 levels=7
+Time for BFS 0 is 20.465335
+TEPS for BFS 0 is 1.63948e+06
+Validating BFS 0
+Validate time for BFS 0 is 106.735842
+Running BFS 1
+[quotient] root 439573 qbfs=15.495141 recon=9.840175 visited=1243378/2097153 levels=7
+Time for BFS 1 is 25.343700
+TEPS for BFS 1 is 1.3239e+06
+Validating BFS 1
