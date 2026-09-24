@@ -1,0 +1,4 @@
+gcc (Debian 14.2.0-19) 14.2.0
+gcc (Debian 14.2.0-19) 14.2.0
+MPI: Open MPI 5.0.7 (single-query: WRAPPER)
+flags: -Drestrict=__restrict__ -O3 -DGRAPH_GENERATOR_MPI -DREUSE_CSR_FOR_VALIDATION -I../aml -fcommon

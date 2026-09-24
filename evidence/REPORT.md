@@ -48,7 +48,10 @@ No STAGE-2 failure observed on any tested root (scales 12, 18).
 
 ## 3. Quotient BFS - concrete Q B_G = B_Q Q
 SCALE 12: matched 4095/4096 non-root vertices, mismatches 0 (root handled by split).
+SCALE 16: matched 65536/65536 non-root vertices, mismatches 0.
 SCALE 18: matched 262144/262144 non-root vertices, mismatches 0.
+SCALE 19: matched 524288/524288 non-root vertices, mismatches 0.
+SCALE 20: matched 1048575/1048575 non-root vertices, mismatches 0 (matched pair run).
 
 ## 4. Reconstruction
 Pred array rebuilt member-wise; parent vertex = representative of parent class
@@ -93,7 +96,36 @@ SCALE 20 (V=1048576, V/Q=560820, comp 1.869719x, largest class 402453=isolated):
 
 All results on exclusive CPU, frozen reference graphs, direct-singleton runs.
 
-## 9. Failure-record / evidence ladder applied
+## 10. Additional scales and structure evidence (post-audit)
+SCALE 16 quotient (official binary, QUOTIENT_DUMP): V/Q=42192, comp 1.553304,
+  largest class 18722 = isolated; Q B_G matched 65536/65536 non-root, 0 mismatches;
+  PASS 64/64 (harmonic TEPS 1.34381e7).
+SCALE 21 probe (SKIP_VALIDATION, bounded): construction succeeded
+  V=2097153, V/Q=1069627, comp 1.960640, largest class 852908 = isolated;
+  >=33 BFS searches completed per-root (qbfs ~3.3s + recon ~1.1s) before bound.
+  => max FULLY VERIFIED scale = 20; scale 21 = construction/BFS-feasible probe
+     (full validation not yet run; boundary recorded, not promoted).
+Class-size histogram at SCALE 18 (diag variant):
+  |C|=1:148685 (96.68% singleton classes)  |C|=2:2390  |C|3-4:1458
+  |C|5-256:1262  |C|257-65536:1  |C|>65536:1 (the isolated class 88453)
+  => compression is dominated by the single empty-neighborhood class plus a
+     long tail of small twin classes; the quotient is extremely sparse.
+
+## 11. Matched-pair headline (back-to-back, same frozen graph, scale 20)
+Re-run under a single contiguous window to remove cross-window drift:
+  reference: harmonic TEPS 9.26255e+06, mean_time 1.81114 s, min_nedge 16775818, PASS
+  quotient:  harmonic TEPS 1.15903e+07, mean_time 1.44740 s, min_nedge 16775818, PASS
+  TEPS ratio / mean-time speedup (identical, same m):  1.2513x
+  Q B_G == B_Q Q measured: 1048575/1048575, 0 mismatches.
+This is the pair-in-window evidence; per-scale si ratios are reported from the logs.
+
+## 12. Parallel decomposition experiment (RESEARCH, non-official)
+64 search keys partitioned across 2 worker processes on the quota-1 host:
+  serial wall 31 s vs concurrent max wall 42 s => S_parallel 0.74, efficiency 0.37.
+  Conclusion: the quotient gives WORK REDUCTION (serial, exact), not physical
+  parallelism on this node; no parallel speedup claimed (see parallel_diagnostic.md).
+
+## 13. Failure-record / evidence ladder applied
 - Ladder: CONCEPTUAL -> DERIVED -> IMPLEMENTED -> MEASURED -> VERIFIED -> COMPOSED-VERIFIED
 - Each promoted claim: ClaimStrength <= EvidenceStrength (never multiplied).
 - STAGE failures: none at any scale for validation/reconstruction/QBG (root-split

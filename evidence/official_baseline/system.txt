@@ -1,0 +1,40 @@
+# Official (unmodified) reference baseline — collected 2026-09-24
+
+NEVER modified after collection.
+
+## System
+- OS: Android 16 Terminal (proot) / Linux 6.17.0-PRoot-Distro aarch64
+- CPU: Cortex-A55 (part 0xd05), 8 logical CPUs advertised, cgroup CPU quota = 1
+  effective core (single-core benchmark regime; exclusive CPU during all runs)
+- RAM: 7.2 GiB total; MemAvailable ~2.0-2.5 GiB during runs, 4 GiB swap
+- Compiler: gcc (Debian 14.2.0-19) 14.2.0 (mpicc -> gcc)
+- Python: 3.13.5 (reporting tooling only)
+
+## Build
+- Repo: batmeezy918/graph500 @ newreference == upstream f89d643 (tag 3.0.1)
+- Binary: src/graph500_reference_bfs, sha256 5b1aad49f31d1584cf85509410e72a082657abf44642db739147e039bae9f1c4
+- src/graph500_reference_bfs_sssp, sha256 28da16526c6d7a17a6feeb0d751cfcfd3ed0f493b7dba2a3dd72047643d0d13f
+- Effective CFLAGS: -Drestrict=__restrict__ -O3 -DGRAPH_GENERATOR_MPI
+  -DREUSE_CSR_FOR_VALIDATION -I../aml -fcommon   (-fcommon appended for GCC>=10)
+- Make target: graph500_reference_bfs / graph500_reference_bfs_sssp (fork Makefile)
+- src/bfs_reference.c, sssp_reference.c, csr_reference.c, validate.c: UNMODIFIED.
+- No -march/-mtune, no SIMD flags, stock MPI (Open MPI 5.0.7 via WRAPPER mpicc).
+
+## Run procedure (direct singleton; PMIx/mpirun unavailable in proot)
+    export OMPI_ALLOW_RUN_AS_ROOT=1 OMPI_ALLOW_RUN_AS_ROOT_CONFIRM=1
+    TMPFILE=/tmp/qg500/s18.bin REUSEFILE=1 ./graph500_reference_bfs 18 16
+    TMPFILE=/tmp/qg500/s19.bin REUSEFILE=1 ./graph500_reference_bfs 19 16
+    TMPFILE=/tmp/qg500/s20.bin REUSEFILE=1 ./graph500_reference_bfs 20 16
+- Default seeds 2,3 (main.c); edgefactor 16; NBFS 64; validation enabled.
+
+## Verified properties (from the four logs)
+- NBFS = 64 everywhere
+- 64/64 validation PASS (no "No results printed for invalid run")
+- min_nedge: SCALE18 4193472, SCALE19 8387584, SCALE20 16775818
+- harmonic TEPS: 8.16728e6 / 5.60031e6 / 6.57104e6
+- mean_time: 0.513448 / 1.497700 / 2.552990
+
+## Contents
+- official_bfs_scale18/19/20.log  (complete official output, frozen)
+- official_sssp_scale18.log       (SSSP reference fields, frozen)
+- baseline_logs.sha256            (checksums of the above)

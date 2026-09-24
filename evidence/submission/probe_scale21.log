@@ -1,0 +1,146 @@
+[localhost:09821] opal_ifinit: ioctl(SIOCGIFHWADDR) failed with errno=13
+[localhost:09821] pmix_ifinit: ioctl(SIOCGIFHWADDR) failed with errno=13
+failed to open /dev/dri/renderD128: Permission denied
+failed to open /dev/dri/renderD128: Permission denied
+failed to open /dev/dri/renderD128: Permission denied
+failed to open /dev/dri/renderD128: Permission denied
+failed to open /dev/dri/renderD128: Permission denied
+failed to open /dev/dri/renderD128: Permission denied
+graph_generation:               120.184248 s
+quotient: V=2097153 E=67105872 V/Q=1069627 E/Q=63368144 |V|/|V/Q|=1.960640 largest_class=852908 isolated=852908
+  times: CSR 59.501630 sort 34.527639 fp 7.531291 classify 0.330338 quotientCSR 49.461615 (total 151.352513)
+construction_time:              151.372059 s
+[quotient] root 939160 qbfs=3.604835 recon=1.163656 visited=1243378/2097153 levels=7
+Running BFS 0
+[quotient] root 939160 qbfs=3.473422 recon=1.097087 visited=1243378/2097153 levels=7
+Time for BFS 0 is 4.570649
+TEPS for BFS 0 is 7.34086e+06
+Running BFS 1
+[quotient] root 439573 qbfs=3.267010 recon=1.168717 visited=1243378/2097153 levels=7
+Time for BFS 1 is 4.435866
+TEPS for BFS 1 is 7.56391e+06
+Running BFS 2
+[quotient] root 258062 qbfs=3.632155 recon=1.221256 visited=1243378/2097153 levels=7
+Time for BFS 2 is 4.853575
+TEPS for BFS 2 is 6.91295e+06
+Running BFS 3
+[quotient] root 1979356 qbfs=3.630291 recon=1.281111 visited=1243378/2097153 levels=6
+Time for BFS 3 is 4.911566
+TEPS for BFS 3 is 6.83132e+06
+Running BFS 4
+[quotient] root 953878 qbfs=3.584573 recon=1.125176 visited=1243378/2097153 levels=6
+Time for BFS 4 is 4.709860
+TEPS for BFS 4 is 7.12389e+06
+Running BFS 5
+[quotient] root 1738116 qbfs=3.689379 recon=1.257612 visited=1243378/2097153 levels=6
+Time for BFS 5 is 4.947116
+TEPS for BFS 5 is 6.78224e+06
+Running BFS 6
+[quotient] root 484124 qbfs=3.568815 recon=1.163638 visited=1243378/2097153 levels=7
+Time for BFS 6 is 4.732584
+TEPS for BFS 6 is 7.08968e+06
+Running BFS 7
+[quotient] root 902485 qbfs=3.611989 recon=1.204395 visited=1243378/2097153 levels=7
+Time for BFS 7 is 4.816527
+TEPS for BFS 7 is 6.96612e+06
+Running BFS 8
+[quotient] root 238977 qbfs=3.593030 recon=1.218678 visited=1243378/2097153 levels=7
+Time for BFS 8 is 4.811840
+TEPS for BFS 8 is 6.9729e+06
+Running BFS 9
+[quotient] root 1421043 qbfs=3.567891 recon=1.210671 visited=1243378/2097153 levels=7
+Time for BFS 9 is 4.778725
+TEPS for BFS 9 is 7.02122e+06
+Running BFS 10
+[quotient] root 335162 qbfs=3.740568 recon=1.202018 visited=1243378/2097153 levels=7
+Time for BFS 10 is 4.942716
+TEPS for BFS 10 is 6.78827e+06
+Running BFS 11
+[quotient] root 269810 qbfs=3.553054 recon=1.125216 visited=1243378/2097153 levels=6
+Time for BFS 11 is 4.678393
+TEPS for BFS 11 is 7.1718e+06
+Running BFS 12
+[quotient] root 2009272 qbfs=3.525379 recon=1.122828 visited=1243378/2097153 levels=6
+Time for BFS 12 is 4.648348
+TEPS for BFS 12 is 7.21816e+06
+Running BFS 13
+[quotient] root 547280 qbfs=3.616594 recon=1.041111 visited=1243378/2097153 levels=7
+Time for BFS 13 is 4.657839
+TEPS for BFS 13 is 7.20345e+06
+Running BFS 14
+[quotient] root 373504 qbfs=3.458475 recon=1.085403 visited=1243378/2097153 levels=6
+Time for BFS 14 is 4.544015
+TEPS for BFS 14 is 7.38389e+06
+Running BFS 15
+[quotient] root 131392 qbfs=3.643861 recon=1.131057 visited=1243378/2097153 levels=7
+Time for BFS 15 is 4.775015
+TEPS for BFS 15 is 7.02668e+06
+Running BFS 16
+[quotient] root 85403 qbfs=3.725236 recon=1.162006 visited=1243378/2097153 levels=7
+Time for BFS 16 is 4.887377
+TEPS for BFS 16 is 6.86513e+06
+Running BFS 17
+[quotient] root 1167514 qbfs=3.684155 recon=1.156921 visited=1243378/2097153 levels=6
+Time for BFS 17 is 4.841196
+TEPS for BFS 17 is 6.93062e+06
+Running BFS 18
+[quotient] root 1923753 qbfs=3.695942 recon=1.168697 visited=1243378/2097153 levels=7
+Time for BFS 18 is 4.864927
+TEPS for BFS 18 is 6.89682e+06
+Running BFS 19
+[quotient] root 403986 qbfs=3.680297 recon=1.163574 visited=1243378/2097153 levels=7
+Time for BFS 19 is 4.843989
+TEPS for BFS 19 is 6.92663e+06
+Running BFS 20
+[quotient] root 1285718 qbfs=3.799908 recon=1.096789 visited=1243378/2097153 levels=7
+Time for BFS 20 is 4.896928
+TEPS for BFS 20 is 6.85174e+06
+Running BFS 21
+[quotient] root 1456076 qbfs=3.819368 recon=1.178857 visited=1243378/2097153 levels=7
+Time for BFS 21 is 4.998375
+TEPS for BFS 21 is 6.71268e+06
+Running BFS 22
+[quotient] root 1756177 qbfs=3.837547 recon=1.214553 visited=1243378/2097153 levels=7
+Time for BFS 22 is 5.052235
+TEPS for BFS 22 is 6.64112e+06
+Running BFS 23
+[quotient] root 2083642 qbfs=3.724034 recon=1.116535 visited=1243378/2097153 levels=7
+Time for BFS 23 is 4.840692
+TEPS for BFS 23 is 6.93134e+06
+Running BFS 24
+[quotient] root 632410 qbfs=3.891980 recon=1.116044 visited=1243378/2097153 levels=6
+Time for BFS 24 is 5.008130
+TEPS for BFS 24 is 6.69961e+06
+Running BFS 25
+[quotient] root 1801117 qbfs=3.375248 recon=1.091063 visited=1243378/2097153 levels=6
+Time for BFS 25 is 4.466466
+TEPS for BFS 25 is 7.51209e+06
+Running BFS 26
+[quotient] root 440150 qbfs=3.430541 recon=1.056916 visited=1243378/2097153 levels=7
+Time for BFS 26 is 4.487555
+TEPS for BFS 26 is 7.47679e+06
+Running BFS 27
+[quotient] root 1394640 qbfs=3.562252 recon=1.132928 visited=1243378/2097153 levels=7
+Time for BFS 27 is 4.695326
+TEPS for BFS 27 is 7.14594e+06
+Running BFS 28
+[quotient] root 72767 qbfs=3.416721 recon=1.028569 visited=1243378/2097153 levels=7
+Time for BFS 28 is 4.445422
+TEPS for BFS 28 is 7.54765e+06
+Running BFS 29
+[quotient] root 363527 qbfs=3.347260 recon=1.071180 visited=1243378/2097153 levels=7
+Time for BFS 29 is 4.418632
+TEPS for BFS 29 is 7.59341e+06
+Running BFS 30
+[quotient] root 1089491 qbfs=3.367237 recon=1.061304 visited=1243378/2097153 levels=7
+Time for BFS 30 is 4.428686
+TEPS for BFS 30 is 7.57617e+06
+Running BFS 31
+[quotient] root 1136669 qbfs=3.292829 recon=1.053389 visited=1243378/2097153 levels=6
+Time for BFS 31 is 4.346376
+TEPS for BFS 31 is 7.71965e+06
+Running BFS 32
+[quotient] root 1671267 qbfs=3.250541 recon=1.154355 visited=1243378/2097153 levels=6
+Time for BFS 32 is 4.405028
+TEPS for BFS 32 is 7.61686e+06
+Running BFS 33

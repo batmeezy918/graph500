@@ -1,0 +1,6 @@
+upstream: graph500/graph500
+checkout: f89d643ce4aaae9a823d310c6ab2dd10e3d2982c  (tag 3.0.1, branch newreference)
+fork:     batmeezy918/graph500
+generator: Kronecker R-MAT (A=.57 B=.19 C=.19 D=.05), packed 48-bit edges
+seeds:    1:2 2:3  (main.c header)
+edgefactor: 16;  NBFS: 64

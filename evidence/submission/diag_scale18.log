@@ -1,0 +1,433 @@
+[localhost:06865] opal_ifinit: ioctl(SIOCGIFHWADDR) failed with errno=13
+[localhost:06865] pmix_ifinit: ioctl(SIOCGIFHWADDR) failed with errno=13
+failed to open /dev/dri/renderD128: Permission denied
+failed to open /dev/dri/renderD128: Permission denied
+failed to open /dev/dri/renderD128: Permission denied
+failed to open /dev/dri/renderD128: Permission denied
+failed to open /dev/dri/renderD128: Permission denied
+failed to open /dev/dri/renderD128: Permission denied
+graph_generation:               0.000003 s
+quotient: V=262145 E=8387052 V/Q=153797 E/Q=7590085 |V|/|V/Q|=1.704487 largest_class=88453 isolated=88453
+  times: CSR 10.241245 sort 7.994776 fp 1.727518 classify 0.046625 quotientCSR 7.727458 (total 27.737621)
+  class-size histogram: |C|=1:148685 |C|=2:2390 |C|3-4:1458 |C|5-256:1262 |C|257-65536:1 |C|>65536:1
+  singletons_fraction=0.966761
+construction_time:              27.749927 s
+[quotient] root 117395 qbfs=0.626227 recon=0.306907 visited=173585/262145 levels=6
+Running BFS 0
+[quotient] root 117395 qbfs=0.597796 recon=0.282841 visited=173585/262145 levels=6
+Time for BFS 0 is 0.880773
+TEPS for BFS 0 is 4.76113e+06
+Validating BFS 0
+Validate time for BFS 0 is 10.654727
+Running BFS 1
+[quotient] root 54946 qbfs=0.611947 recon=0.266560 visited=173585/262145 levels=7
+Time for BFS 1 is 0.878647
+TEPS for BFS 1 is 4.77265e+06
+Validating BFS 1
+Validate time for BFS 1 is 10.972489
+Running BFS 2
+[quotient] root 56428 qbfs=0.596020 recon=0.246322 visited=173585/262145 levels=7
+Time for BFS 2 is 0.842482
+TEPS for BFS 2 is 4.97752e+06
+Validating BFS 2
+Validate time for BFS 2 is 10.713953
+Running BFS 3
+[quotient] root 32257 qbfs=0.575408 recon=0.236960 visited=173585/262145 levels=6
+Time for BFS 3 is 0.812468
+TEPS for BFS 3 is 5.1614e+06
+Validating BFS 3
+Validate time for BFS 3 is 10.741931
+Running BFS 4
+[quotient] root 247419 qbfs=0.535441 recon=0.289081 visited=173585/262145 levels=6
+Time for BFS 4 is 0.824626
+TEPS for BFS 4 is 5.0853e+06
+Validating BFS 4
+Validate time for BFS 4 is 10.444997
+Running BFS 5
+[quotient] root 2403 qbfs=0.543072 recon=0.278309 visited=173585/262145 levels=7
+Time for BFS 5 is 0.821548
+TEPS for BFS 5 is 5.10435e+06
+Validating BFS 5
+Validate time for BFS 5 is 10.711744
+Running BFS 6
+[quotient] root 119234 qbfs=0.587632 recon=0.267879 visited=173585/262145 levels=6
+Time for BFS 6 is 0.855625
+TEPS for BFS 6 is 4.90106e+06
+Validating BFS 6
+Validate time for BFS 6 is 10.608150
+Running BFS 7
+[quotient] root 88128 qbfs=0.562596 recon=0.312799 visited=173585/262145 levels=6
+Time for BFS 7 is 0.875497
+TEPS for BFS 7 is 4.78982e+06
+Validating BFS 7
+Validate time for BFS 7 is 10.377676
+Running BFS 8
+[quotient] root 60515 qbfs=0.610036 recon=0.279668 visited=173585/262145 levels=6
+Time for BFS 8 is 0.889827
+TEPS for BFS 8 is 4.71268e+06
+Validating BFS 8
+Validate time for BFS 8 is 10.321851
+Running BFS 9
+[quotient] root 230445 qbfs=0.552549 recon=0.229968 visited=173585/262145 levels=7
+Time for BFS 9 is 0.782612
+TEPS for BFS 9 is 5.3583e+06
+Validating BFS 9
+Validate time for BFS 9 is 10.862479
+Running BFS 10
+[quotient] root 206481 qbfs=0.588828 recon=0.287215 visited=173585/262145 levels=7
+Time for BFS 10 is 0.876179
+TEPS for BFS 10 is 4.78609e+06
+Validating BFS 10
+Validate time for BFS 10 is 10.786315
+Running BFS 11
+[quotient] root 29872 qbfs=0.526083 recon=0.230054 visited=173585/262145 levels=7
+Time for BFS 11 is 0.756237
+TEPS for BFS 11 is 5.54518e+06
+Validating BFS 11
+Validate time for BFS 11 is 9.177378
+Running BFS 12
+[quotient] root 177630 qbfs=0.492852 recon=0.232121 visited=173585/262145 levels=6
+Time for BFS 12 is 0.725089
+TEPS for BFS 12 is 5.78339e+06
+Validating BFS 12
+Validate time for BFS 12 is 8.324275
+Running BFS 13
+[quotient] root 41895 qbfs=0.252833 recon=0.113440 visited=173585/262145 levels=6
+Time for BFS 13 is 0.366380
+TEPS for BFS 13 is 1.14457e+07
+Validating BFS 13
+Validate time for BFS 13 is 4.366702
+Running BFS 14
+[quotient] root 52869 qbfs=0.239946 recon=0.116595 visited=173585/262145 levels=6
+Time for BFS 14 is 0.356666
+TEPS for BFS 14 is 1.17574e+07
+Validating BFS 14
+Validate time for BFS 14 is 4.279926
+Running BFS 15
+[quotient] root 96661 qbfs=0.246670 recon=0.113964 visited=173585/262145 levels=7
+Time for BFS 15 is 0.360737
+TEPS for BFS 15 is 1.16247e+07
+Validating BFS 15
+Validate time for BFS 15 is 4.358306
+Running BFS 16
+[quotient] root 24653 qbfs=0.234915 recon=0.112037 visited=173585/262145 levels=7
+Time for BFS 16 is 0.347088
+TEPS for BFS 16 is 1.20819e+07
+Validating BFS 16
+Validate time for BFS 16 is 4.280907
+Running BFS 17
+[quotient] root 35889 qbfs=0.231197 recon=0.112209 visited=173585/262145 levels=7
+Time for BFS 17 is 0.343539
+TEPS for BFS 17 is 1.22067e+07
+Validating BFS 17
+Validate time for BFS 17 is 4.374683
+Running BFS 18
+[quotient] root 247513 qbfs=0.236202 recon=0.115351 visited=173585/262145 levels=7
+Time for BFS 18 is 0.351683
+TEPS for BFS 18 is 1.1924e+07
+Validating BFS 18
+Validate time for BFS 18 is 5.105200
+Running BFS 19
+[quotient] root 213868 qbfs=0.238630 recon=0.117323 visited=173585/262145 levels=6
+Time for BFS 19 is 0.356054
+TEPS for BFS 19 is 1.17776e+07
+Validating BFS 19
+Validate time for BFS 19 is 4.954128
+Running BFS 20
+[quotient] root 19529 qbfs=0.228052 recon=0.113865 visited=173585/262145 levels=6
+Time for BFS 20 is 0.342046
+TEPS for BFS 20 is 1.226e+07
+Validating BFS 20
+Validate time for BFS 20 is 4.883571
+Running BFS 21
+[quotient] root 16424 qbfs=0.297145 recon=0.123351 visited=173585/262145 levels=6
+Time for BFS 21 is 0.420624
+TEPS for BFS 21 is 9.96965e+06
+Validating BFS 21
+Validate time for BFS 21 is 4.808476
+Running BFS 22
+[quotient] root 95656 qbfs=0.278650 recon=0.148607 visited=173585/262145 levels=6
+Time for BFS 22 is 0.427367
+TEPS for BFS 22 is 9.81234e+06
+Validating BFS 22
+Validate time for BFS 22 is 4.893840
+Running BFS 23
+[quotient] root 10675 qbfs=0.274332 recon=0.134798 visited=173585/262145 levels=7
+Time for BFS 23 is 0.409235
+TEPS for BFS 23 is 1.02471e+07
+Validating BFS 23
+Validate time for BFS 23 is 4.829222
+Running BFS 24
+[quotient] root 164186 qbfs=0.271213 recon=0.128455 visited=173585/262145 levels=6
+Time for BFS 24 is 0.399813
+TEPS for BFS 24 is 1.04886e+07
+Validating BFS 24
+Validate time for BFS 24 is 5.065825
+Running BFS 25
+[quotient] root 145939 qbfs=0.273719 recon=0.112132 visited=173585/262145 levels=6
+Time for BFS 25 is 0.385956
+TEPS for BFS 25 is 1.08652e+07
+Validating BFS 25
+Validate time for BFS 25 is 4.995636
+Running BFS 26
+[quotient] root 190916 qbfs=0.258529 recon=0.115469 visited=173585/262145 levels=6
+Time for BFS 26 is 0.374104
+TEPS for BFS 26 is 1.12094e+07
+Validating BFS 26
+Validate time for BFS 26 is 4.939466
+Running BFS 27
+[quotient] root 229969 qbfs=0.252578 recon=0.120415 visited=173585/262145 levels=6
+Time for BFS 27 is 0.373128
+TEPS for BFS 27 is 1.12387e+07
+Validating BFS 27
+Validate time for BFS 27 is 4.384187
+Running BFS 28
+[quotient] root 50498 qbfs=0.253171 recon=0.122720 visited=173585/262145 levels=7
+Time for BFS 28 is 0.376023
+TEPS for BFS 28 is 1.11522e+07
+Validating BFS 28
+Validate time for BFS 28 is 4.522282
+Running BFS 29
+[quotient] root 145870 qbfs=0.245278 recon=0.122270 visited=173585/262145 levels=7
+Time for BFS 29 is 0.367659
+TEPS for BFS 29 is 1.14059e+07
+Validating BFS 29
+Validate time for BFS 29 is 4.740839
+Running BFS 30
+[quotient] root 171561 qbfs=0.250595 recon=0.106122 visited=173585/262145 levels=6
+Time for BFS 30 is 0.356850
+TEPS for BFS 30 is 1.17514e+07
+Validating BFS 30
+Validate time for BFS 30 is 4.557438
+Running BFS 31
+[quotient] root 176876 qbfs=0.244291 recon=0.116402 visited=173585/262145 levels=7
+Time for BFS 31 is 0.360827
+TEPS for BFS 31 is 1.16218e+07
+Validating BFS 31
+Validate time for BFS 31 is 4.623778
+Running BFS 32
+[quotient] root 25049 qbfs=0.238733 recon=0.110919 visited=173585/262145 levels=6
+Time for BFS 32 is 0.349761
+TEPS for BFS 32 is 1.19895e+07
+Validating BFS 32
+Validate time for BFS 32 is 4.636412
+Running BFS 33
+[quotient] root 225139 qbfs=0.247147 recon=0.120109 visited=173585/262145 levels=6
+Time for BFS 33 is 0.367361
+TEPS for BFS 33 is 1.14151e+07
+Validating BFS 33
+Validate time for BFS 33 is 4.642771
+Running BFS 34
+[quotient] root 174330 qbfs=0.258278 recon=0.116506 visited=173585/262145 levels=6
+Time for BFS 34 is 0.374963
+TEPS for BFS 34 is 1.11837e+07
+Validating BFS 34
+Validate time for BFS 34 is 4.507022
+Running BFS 35
+[quotient] root 9095 qbfs=0.263794 recon=0.117734 visited=173585/262145 levels=6
+Time for BFS 35 is 0.381622
+TEPS for BFS 35 is 1.09886e+07
+Validating BFS 35
+Validate time for BFS 35 is 4.574654
+Running BFS 36
+[quotient] root 45440 qbfs=0.243836 recon=0.124520 visited=173585/262145 levels=6
+Time for BFS 36 is 0.368483
+TEPS for BFS 36 is 1.13804e+07
+Validating BFS 36
+Validate time for BFS 36 is 4.490226
+Running BFS 37
+[quotient] root 124259 qbfs=0.255333 recon=0.122615 visited=173585/262145 levels=6
+Time for BFS 37 is 0.378066
+TEPS for BFS 37 is 1.10919e+07
+Validating BFS 37
+Validate time for BFS 37 is 4.360967
+Running BFS 38
+[quotient] root 208908 qbfs=0.248653 recon=0.143479 visited=173585/262145 levels=6
+Time for BFS 38 is 0.392253
+TEPS for BFS 38 is 1.06907e+07
+Validating BFS 38
+Validate time for BFS 38 is 4.738817
+Running BFS 39
+[quotient] root 85232 qbfs=0.268807 recon=0.131849 visited=173585/262145 levels=7
+Time for BFS 39 is 0.400794
+TEPS for BFS 39 is 1.04629e+07
+Validating BFS 39
+Validate time for BFS 39 is 4.653608
+Running BFS 40
+[quotient] root 208657 qbfs=0.268853 recon=0.127706 visited=173585/262145 levels=6
+Time for BFS 40 is 0.396701
+TEPS for BFS 40 is 1.05709e+07
+Validating BFS 40
+Validate time for BFS 40 is 4.627494
+Running BFS 41
+[quotient] root 43861 qbfs=0.256460 recon=0.139227 visited=173585/262145 levels=6
+Time for BFS 41 is 0.395829
+TEPS for BFS 41 is 1.05942e+07
+Validating BFS 41
+Validate time for BFS 41 is 4.740445
+Running BFS 42
+[quotient] root 38238 qbfs=0.296533 recon=0.125978 visited=173585/262145 levels=7
+Time for BFS 42 is 0.422653
+TEPS for BFS 42 is 9.92178e+06
+Validating BFS 42
+Validate time for BFS 42 is 4.814106
+Running BFS 43
+[quotient] root 44290 qbfs=0.285886 recon=0.122736 visited=173585/262145 levels=6
+Time for BFS 43 is 0.408763
+TEPS for BFS 43 is 1.02589e+07
+Validating BFS 43
+Validate time for BFS 43 is 4.461516
+Running BFS 44
+[quotient] root 210138 qbfs=0.241213 recon=0.132727 visited=173585/262145 levels=7
+Time for BFS 44 is 0.374076
+TEPS for BFS 44 is 1.12102e+07
+Validating BFS 44
+Validate time for BFS 44 is 4.231104
+Running BFS 45
+[quotient] root 97977 qbfs=0.246004 recon=0.117013 visited=173585/262145 levels=7
+Time for BFS 45 is 0.363138
+TEPS for BFS 45 is 1.15479e+07
+Validating BFS 45
+Validate time for BFS 45 is 3.581484
+Running BFS 46
+[quotient] root 182821 qbfs=0.219803 recon=0.115778 visited=173585/262145 levels=6
+Time for BFS 46 is 0.335686
+TEPS for BFS 46 is 1.24922e+07
+Validating BFS 46
+Validate time for BFS 46 is 4.239185
+Running BFS 47
+[quotient] root 75311 qbfs=0.232641 recon=0.111576 visited=173585/262145 levels=7
+Time for BFS 47 is 0.344343
+TEPS for BFS 47 is 1.21782e+07
+Validating BFS 47
+Validate time for BFS 47 is 4.349059
+Running BFS 48
+[quotient] root 3732 qbfs=0.254500 recon=0.111507 visited=173585/262145 levels=6
+Time for BFS 48 is 0.366097
+TEPS for BFS 48 is 1.14546e+07
+Validating BFS 48
+Validate time for BFS 48 is 4.062713
+Running BFS 49
+[quotient] root 182306 qbfs=0.220032 recon=0.115884 visited=173585/262145 levels=6
+Time for BFS 49 is 0.336029
+TEPS for BFS 49 is 1.24795e+07
+Validating BFS 49
+Validate time for BFS 49 is 4.004290
+Running BFS 50
+[quotient] root 75630 qbfs=0.213797 recon=0.113143 visited=173585/262145 levels=6
+Time for BFS 50 is 0.327047
+TEPS for BFS 50 is 1.28222e+07
+Validating BFS 50
+Validate time for BFS 50 is 4.223678
+Running BFS 51
+[quotient] root 172699 qbfs=0.225911 recon=0.113743 visited=173585/262145 levels=6
+Time for BFS 51 is 0.339779
+TEPS for BFS 51 is 1.23418e+07
+Validating BFS 51
+Validate time for BFS 51 is 4.627939
+Running BFS 52
+[quotient] root 104534 qbfs=0.235808 recon=0.119173 visited=173585/262145 levels=7
+Time for BFS 52 is 0.355072
+TEPS for BFS 52 is 1.18102e+07
+Validating BFS 52
+Validate time for BFS 52 is 5.851461
+Running BFS 53
+[quotient] root 27533 qbfs=0.245576 recon=0.118743 visited=173585/262145 levels=7
+Time for BFS 53 is 0.364448
+TEPS for BFS 53 is 1.15064e+07
+Validating BFS 53
+Validate time for BFS 53 is 4.360460
+Running BFS 54
+[quotient] root 52109 qbfs=0.230504 recon=0.106880 visited=173585/262145 levels=6
+Time for BFS 54 is 0.337514
+TEPS for BFS 54 is 1.24246e+07
+Validating BFS 54
+Validate time for BFS 54 is 4.798835
+Running BFS 55
+[quotient] root 245558 qbfs=0.273494 recon=0.130212 visited=173585/262145 levels=6
+Time for BFS 55 is 0.403911
+TEPS for BFS 55 is 1.03822e+07
+Validating BFS 55
+Validate time for BFS 55 is 4.615836
+Running BFS 56
+[quotient] root 77706 qbfs=0.259799 recon=0.127373 visited=173585/262145 levels=6
+Time for BFS 56 is 0.387355
+TEPS for BFS 56 is 1.08259e+07
+Validating BFS 56
+Validate time for BFS 56 is 4.723234
+Running BFS 57
+[quotient] root 175793 qbfs=0.264318 recon=0.120779 visited=173585/262145 levels=6
+Time for BFS 57 is 0.385213
+TEPS for BFS 57 is 1.08861e+07
+Validating BFS 57
+Validate time for BFS 57 is 4.814771
+Running BFS 58
+[quotient] root 10077 qbfs=0.258000 recon=0.119244 visited=173585/262145 levels=6
+Time for BFS 58 is 0.377370
+TEPS for BFS 58 is 1.11124e+07
+Validating BFS 58
+Validate time for BFS 58 is 4.658708
+Running BFS 59
+[quotient] root 200945 qbfs=0.267786 recon=0.102070 visited=173585/262145 levels=6
+Time for BFS 59 is 0.369955
+TEPS for BFS 59 is 1.13351e+07
+Validating BFS 59
+Validate time for BFS 59 is 4.729213
+Running BFS 60
+[quotient] root 192103 qbfs=0.248078 recon=0.140866 visited=173585/262145 levels=6
+Time for BFS 60 is 0.389072
+TEPS for BFS 60 is 1.07781e+07
+Validating BFS 60
+Validate time for BFS 60 is 4.697199
+Running BFS 61
+[quotient] root 194104 qbfs=0.277019 recon=0.133195 visited=173585/262145 levels=6
+Time for BFS 61 is 0.410349
+TEPS for BFS 61 is 1.02193e+07
+Validating BFS 61
+Validate time for BFS 61 is 4.352506
+Running BFS 62
+[quotient] root 92739 qbfs=0.240184 recon=0.106802 visited=173585/262145 levels=6
+Time for BFS 62 is 0.347082
+TEPS for BFS 62 is 1.20821e+07
+Validating BFS 62
+Validate time for BFS 62 is 4.333618
+Running BFS 63
+[quotient] root 227897 qbfs=0.283488 recon=0.141812 visited=173585/262145 levels=7
+Time for BFS 63 is 0.425488
+TEPS for BFS 63 is 9.85567e+06
+Validating BFS 63
+Validate time for BFS 63 is 4.302902
+SCALE:                          18
+edgefactor:                     16
+NBFS:                           64
+graph_generation:               2.865e-06
+num_mpi_processes:              1
+construction_time:              27.7499
+bfs  min_time:                  0.327047
+bfs  firstquartile_time:        0.358794
+bfs  median_time:               0.377718
+bfs  thirdquartile_time:        0.421638
+bfs  max_time:                  0.889827
+bfs  mean_time:                 0.466776
+bfs  stddev_time:               0.188857
+min_nedge:                      4193472
+firstquartile_nedge:            4193472
+median_nedge:                   4193472
+thirdquartile_nedge:            4193472
+max_nedge:                      4193472
+mean_nedge:                     4193472
+stddev_nedge:                   0
+bfs  min_TEPS:                  4.71268e+06
+bfs  firstquartile_TEPS:        9.94566e+06
+bfs  median_TEPS:               1.11021e+07
+bfs  thirdquartile_TEPS:        1.16877e+07
+bfs  max_TEPS:                  1.28222e+07
+bfs  harmonic_mean_TEPS:     !  8.98391e+06
+bfs  harmonic_stddev_TEPS:      457951
+bfs  min_validate:              3.58148
+bfs  firstquartile_validate:    4.37069
+bfs  median_validate:           4.67795
+bfs  thirdquartile_validate:    5.03073
+bfs  max_validate:              10.9725
+bfs  mean_validate:             5.75732
+bfs  stddev_validate:           2.38577

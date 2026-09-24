@@ -1,0 +1,6 @@
+OS: Android 16 Terminal (Termux) with Linux/Proot; kernel 6.17.0-PRoot-Distro aarch64
+CPU: ARM Cortex-A55 (part 0xd05), 8 advertised threads; cgroup CPU quota = 1 core
+RAM: 7.2 GiB total; ~1-2.5 GiB avail (swap 4 GiB)
+Storage: proot rootfs (ext4), fast tmpfs not used
+Notes: PMIx listener unavailable -> binaries run as MPI singleton (rank 0);
+serialized, exclusive benchmarking windows; agent/omniroute CPU baseline present

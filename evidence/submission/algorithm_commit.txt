@@ -1,0 +1,7 @@
+implementation: src/bfs_quotient_twin.c  (Kernel-2 drop-in; exact-neighborhood twin BFS)
+measured commit: a07c5f4  (plus evidence commits; branch newreference of the fork)
+variants: graph500_quotient_twin_diag (histogram diagnostics),
+          graph500_quotient_twin_parallel (R_LO/R_HI research partition),
+          graph500_quotient_twin_native (-march=native; byte-identical to base binary)
+equivalence: u~v iff N(u) == N(v) EXACT (fingerprint prefilter + exact row compare)
+validation:  UNMODIFIED official validate.c (REUSE_CSR_FOR_VALIDATION)

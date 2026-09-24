@@ -18,6 +18,12 @@ graph500_reference_bfs: bfs_reference.c $(SOURCES) $(HEADERS) $(GENERATOR_SOURCE
 graph500_quotient_twin_bfs: bfs_quotient_twin.c $(SOURCES) $(HEADERS) $(GENERATOR_SOURCES) csr_reference.c
 	$(MPICC) $(CFLAGS) $(LDFLAGS) -o graph500_quotient_twin_bfs bfs_quotient_twin.c csr_reference.c $(SOURCES) $(GENERATOR_SOURCES) -lm
 
+graph500_quotient_twin_diag: bfs_quotient_twin_diag.c $(SOURCES) $(HEADERS) $(GENERATOR_SOURCES) csr_reference.c
+	$(MPICC) $(CFLAGS) $(LDFLAGS) -o graph500_quotient_twin_diag bfs_quotient_twin_diag.c csr_reference.c $(SOURCES) $(GENERATOR_SOURCES) -lm
+
+graph500_quotient_twin_parallel: bfs_quotient_twin.c main_parallel.c $(SOURCES) $(HEADERS) $(GENERATOR_SOURCES) csr_reference.c
+	$(MPICC) $(CFLAGS) $(LDFLAGS) -o graph500_quotient_twin_parallel bfs_quotient_twin.c csr_reference.c main_parallel.c utils.c validate.c ../aml/aml.c $(GENERATOR_SOURCES) -lm
+
 graph500_custom_bfs: bfs_custom.c $(SOURCES) $(HEADERS) $(GENERATOR_SOURCES) csr_reference.c
 	$(MPICC) $(CFLAGS) $(LDFLAGS) -o graph500_custom_bfs bfs_custom.c csr_reference.c $(SOURCES) $(GENERATOR_SOURCES) -lm
 

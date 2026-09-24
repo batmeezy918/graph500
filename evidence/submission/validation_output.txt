@@ -1,0 +1,10 @@
+Validation run with UNMODIFIED official validate.c (REUSE_CSR_FOR_VALIDATION).
+Each scale's run prints full stats only when ALL 64 BFS roots validate.
+SCALE 18 reference: 64/64 PASS (min_nedge 4193472)
+SCALE 19 reference: 64/64 PASS (min_nedge 8387584)
+SCALE 20 reference: 64/64 PASS (min_nedge 16775818)
+SCALE 18 quotient:  64/64 PASS (min_nedge 4193472)
+SCALE 19 quotient:  64/64 PASS (min_nedge 8387584)
+SCALE 20 quotient:  64/64 PASS (min_nedge 16775818)
+SCALE 12/16 quotient: 64/64 PASS (smoke/mid-scale evidence)
+No "No results printed for invalid run" in any log; no STAGE failures.
